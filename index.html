@@ -124,6 +124,212 @@ h2 {
       border-color: transparent
     }
   }
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: white;
+}
+
+body.switching * {
+  transition: all 0.2s;
+}
+
+body.dark {
+  background-color: #202020;
+}
+body.dark h1 {
+  color: #fafafa;
+}
+body.dark h3 {
+  color: white;
+}
+body.dark h4 {
+  color: white;
+}
+body.dark .container{
+  color: white;
+}
+body.dark .loader {
+  --path: #ffffff;
+}
+body.dark .card {
+  box-shadow: 0 70px 63px -60px rgb(255, 255, 255);
+
+}
+
+body.dark .dark-mode-switch .bg {
+  border-color: #202020;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 230px;
+  right: 140px;
+}
+
+h1 {
+  margin-top: 40px;
+  color: #101010;
+}
+
+.dark-mode-switch {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.dark-mode-switch:hover .circle {
+  margin-left: 15px;
+  margin-top: -95px;
+}
+.dark-mode-switch .inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.dark-mode-switch .bg {
+  width: 80px;
+  height: 80px;
+  background-color: #202020;
+  border: 1px solid #f0f0f0;
+  border-radius: 40px;
+  transition: all 0s;
+}
+.dark-mode-switch .circle {
+  margin-left: 20px;
+  margin-top: -100px;
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dark-mode-switch .rays .ray {
+  position: absolute;
+  left: 38px;
+  top: 40px;
+  width: 4px;
+  height: 8px;
+  background-color: #fbc02d;
+  transform-origin: 2px 0;
+  opacity: 0;
+}
+.dark-mode-switch .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(40px);
+  transition: all 0.2s;
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(52px);
+}
+.dark-mode-switch.dark:hover .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(52px);
+}
+.dark-mode-switch.dark .circle {
+  margin-left: 0;
+  margin-top: -80px;
+  background-color: #fbc02d;
+  border-color: #f9a825;
+}
+.dark-mode-switch.dark .rays .ray {
+  opacity: 1;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(1) {
+  transform: rotate(-180deg) translateY(48px);
+  transition: all 0.4s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(2) {
+  transform: rotate(-225deg) translateY(48px);
+  transition: all 0.6s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(3) {
+  transform: rotate(-270deg) translateY(48px);
+  transition: all 0.8s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(4) {
+  transform: rotate(-315deg) translateY(48px);
+  transition: all 1s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(5) {
+  transform: rotate(-360deg) translateY(48px);
+  transition: all 1.2s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(6) {
+  transform: rotate(-405deg) translateY(48px);
+  transition: all 1.4s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(7) {
+  transform: rotate(-450deg) translateY(48px);
+  transition: all 1.6s;
+}
+.dark-mode-switch.dark .rays .ray:nth-child(8) {
+  transform: rotate(-495deg) translateY(48px);
+  transition: all 1.8s;
+}
 </style>
 </head>
 <body>
@@ -187,8 +393,28 @@ h2 {
   </div>
 <a class="dribbble" href="https://dribbble.com/shots/5878367-Loaders" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
 <div class="wrapper">
-    <div class="explain">Page updating...</div>
-    <div class="below">-The Zero Dollar Meal Project Tech Team	</div>
+    <h3>Page updating...</h3>
+    <h4>-The Zero Dollar Meal Project Tech Team</h4>
 </div>
+<main>
+  <div class="dark-mode-switch">
+    <div class="inner">
+      <div class="bg"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="rays">
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+    </div>
+  </div>
+  <h1>Dark Mode</h1>
+</main>
+<script  src="./script.js"></script>
 </body>
 </html>

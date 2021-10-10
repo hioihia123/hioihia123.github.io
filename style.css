@@ -226,7 +226,7 @@ body .dribbble img {
   display: block;
   height: 28px;
 }
-.explain {
+h3 {
   position: relative;
   top: 3in;
   font-family:'Yanone Kaffeesatz', sans-serif;;
@@ -234,7 +234,7 @@ body .dribbble img {
   right: 4in;
   width: 140%;
 }
-.below {
+h4 {
   position: relative;
   top: 3.2in;
   font-family:'Yanone Kaffeesatz', sans-serif;;
